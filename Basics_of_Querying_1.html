@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basics of Querying</title>
+</head>
+
+<style type="text/css">
+
+	ul.emphasis {color: red;}
+
+	ul.sub-emphasis {color:blue;}
+
+</style>
+
+<body>
+<ul class="emphasis">
+	<li  >Type 1</li>
+	
+	<li  >Type 3</li>
+		<ul class="sub-emphasis">
+			<li>Type 3.1</li>
+		</ul>
+	<li  >Type 2</li>
+
+
+</ul>
+
+<script type="text/javascript" src="jquery-3.1.0.js"></script>
+
+<script type="text/javascript">
+
+		  // $('ul.emphasis').children('li:nth-child(2)').css('color','green');
+
+		  // $('ul.emphasis')
+		  // 		.children('li')
+		  // 			.first().next().prev()
+		  // 				.css('color','cyan');
+
+		  // $('ul.emphasis').children('li').eq(2).css('color','cyan').text("Updated Text");
+
+
+		 
+</script>
+
+
+
+</body>
+</html>
