@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events 2 HTML</title>
+	 <link rel="stylesheet" type="text/css" href="css/events2.css">
+
+	 <style type="text/css">
+	 	
+	 	.simplyHide {
+	 		display: none;
+	 	}
+	 </style>
+</head>
+<body>
+
+<dl>
+	<dt>When Are you working </dt>
+	<dd>we are opened 24/7</dd>
+	<dt>When Are you working </dt>
+	<dd>we are opened 24/7</dd>
+	<dt>When Are you working </dt>
+	<dd>we are opened 24/7</dd>
+	<dt>When Are you working </dt>
+	<dd>we are opened 24/7</dd>
+	<dt>When Are you working </dt>
+	<dd>we are opened 24/7</dd>
+
+
+</dl>
+
+<script type="text/javascript" src="jquery-3.1.0.js"></script>
+
+<script type="text/javascript">
+	
+	 (function(){
+
+	 	var dd = $('dd');
+	 	dd.filter(':nth-child(n+4)').addClass('simplyHide');
+
+
+
+	 	$('dl').on('mouseenter','dt',function(){
+	 			$(this).
+	 				next().
+	 					slideDown(2000).
+	 					siblings('dd').
+	 						slideUp(2000);
+	 			 
+	 	});
+
+
+	 		 }
+
+
+	 	)();
+
+
+</script>
+
+</body>
+</html>
